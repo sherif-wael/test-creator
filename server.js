@@ -8,7 +8,7 @@ const keys = require("./config/keys")
 // mongodb://localhost:27017/test-creator connecting locally
 mongoose.connect(keys.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true})
         .then(() => {
-            app.listen(process.env.PORT || 5000, () => console.log("server is listening to port 5000"))
+            console.log("mongodb connected")
         })
         .catch(err => console.log(err));
 
@@ -30,3 +30,5 @@ if(process.env.NODE_ENV == "production"){
 }else{
     app.use(express.static("./client/public"))
 }
+
+app.listen(process.env.PORT || 5000, () => console.log("server is listening to port 5000"))
