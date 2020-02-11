@@ -1,8 +1,9 @@
 # test-creator
 A web app for creating test and sharing it
-
+you cna check the live form at https://test-creator.herokuapp.com
 build using
-1-Express
-2-React
-3-Redux
-4-MongoDB
+Express
+React
+Redux
+MongoDB
+
