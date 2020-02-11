@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background-color: rgb(236, 233, 230, 0.3);
+}
+
+.color-green{
+    color: rgb(66, 197, 66, 0.9);
+}
+.container{
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+/* navbar styling */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 20px;
+    align-items: center;
+    margin-bottom: 40px;
+    /* background-color: #4287f5; */
+    background-color: rgb(0,0,0,0.9);
+    /* background-color: #160966; */
+    margin: 0;
+}
+
+.logo{
+    color: white;
+    text-decoration: none;
+}
+.logo img{
+    height: 40px;
+}
+.navbar .navbar-link{
+    color: white;
+    text-decoration: none;
+    padding: 3px 8px;
+    border-radius: 18px;
+    /* background-color: rgb(66, 197, 66, 0.9); */
+    font-size: 16px;
+}
+
+/* navbar styling end */
+
+/* home styling */
+.jumbotron{
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.home{
+    margin: 60px 0 0;
+}
+.logo.bg-primary{
+    padding: 5px 2px;
+    border-radius: 10px;
+}
+.home .col-md-6{
+    box-sizing: border-box;
+    padding: 30px 30px;
+}
+.home div:nth-child(2) p{
+    margin-top: 10px;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    font-size: 18px;
+}
+ul i{
+    color: blue;
+}
+.headline{
+    margin: 50px 0;
+}
+.headline h1 {
+    animation: fadeIn1 1.5s ease;
+    font-weight: 700;
+    text-shadow: 0.1rem 0.1rem 0.5rem 0.8rem black;
+}
+.headline h1 span{
+    text-transform: uppercase;
+    color: rgb(238, 18, 18)
+}
+.headline p{
+    animation: fadeIn2 1s ease-out;
+    animation-fill-mode: backwards;
+}
+@keyframes fadeIn1{
+    0%{opacity: 0.1; transform: translateY(-100px)}
+}
+@keyframes fadeIn2{
+    0%{opacity: 0.2; transform: translateX(-200px)}
+}
+
+/* home styling end */
+
+/* footer styling */
+.footer{
+    /* background-color: #4287f5; */
+    background-color: rgb(0,0,0,0.9);
+    /* background-color: #160966; */
+    padding: 10px 0; 
+    color: white;
+    margin: 0;
+    font-size: 16px;
+}
+.footer p {
+    margin: 0;
+}
+.footer-logo{
+    height: 25px;
+}
+/* footer styling end */
+
+/* dashboard styling */
+.dashboard .user-nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.user-nav-links .links a{
+    color: green;
+    text-decoration: none;
+    padding: 0 7px;
+    cursor: pointer;
+}
+.user-name{
+    font-weight: 600;
+    font-size: 21px;
+    margin: 0;
+}
+.user-name p{
+    margin: 0;
+    text-decoration: underline;
+}
+.test-icon{
+    padding: 20px 10px;
+    margin: 5px 0;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.8rem black;
+}
+/* dashboard styling end */
+
+.choices .input-group{
+    margin-bottom: 5px;
+}
+.choices-label{
+    vertical-align: middle;
+}
+
+.narrow{
+    max-width: 75%;
+    margin: 0 auto;
+}
+.question{
+    background-color: rgb(255, 255, 255, 0.75);
+    box-shadow: 1px 1px 8px 2px rgb(0,0,0,0.2);
+    margin: 10px 0;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+.question p{
+    margin: 5px 0;
+}
+.jumbotron.questions{
+    margin-top: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.question i.fa-times{
+    color: red
+}
+.question i.fa-check{
+    color: green;
+}
+.test-name input{
+    margin: 10px 0 0;
+}
+.test-icon{
+    background-color: rgb(255, 255, 255, 0.75);
+    box-shadow: 1px 1px 8px 2px rgb(0,0,0,0.2);
+    margin: 10px 0;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+}
+.test-icon-btns{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 2;
+}
+.test-icon-btns button{
+    margin: 0 5px;
+}
+.test-info{
+    margin: 20px 0;
+}
+.no-test-found{
+    padding: 50px 0;
+    color: gray;
+    font-size: 21px;
+}
+.error-404{
+    color: gray;
+    font-size: 22px;
+    padding: 50px 0;
+    font-weight: 700;
+}
+.spinner{
+    display:inline-block;
+    padding: 5px;
+    animation: rotateSpinner 0.7s ease-in-out infinite alternate;
+}
+.spinner i{
+    font-size: 30px;
+}
+@keyframes rotateSpinner{
+    100%{transform: rotate(270deg);}
+}
+.toggle-form a{
+    cursor: pointer;
+}
+@media screen and (max-width: 1220px){
+    .narrow{
+        max-width: 90%;
+        margin: 0 auto
+    }
+    .no-test-found{
+        font-size: 18px;
+    }
+}
